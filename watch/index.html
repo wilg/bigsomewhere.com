@@ -2,22 +2,22 @@
 <html>
 <head>
 	<title>Big Somewhere - Watch</title>
-	
+
 	<meta content="chrome=1" http-equiv="X-UA-Compatible" />
 	<meta charset="UTF-8" />
 	<meta name="description" content="Big Somewhere is a short film written and directed by Wil Gieseler." />
-	
+
 	<link href="../stylesheets/reset.css" media="all" rel="stylesheet" type="text/css" />
 	<link href="../stylesheets/big-somewhere.css" media="all" rel="stylesheet" type="text/css" />
-	
+
 	<script src="../javascripts/cufon/cufon-yui.js" type="text/javascript"></script>
 	<script src="../javascripts/cufon/Stempel_Schneidler_500.font.js" type="text/javascript"></script>
 	<script type="text/javascript">
 		Cufon.replace("h1", {textShadow: '1px 2px rgba(0, 0, 0, 0.4)'});
 		Cufon.replace('h2, h3, .classic, .slideshow-caption');
 	</script>
-	<script src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.1.0/prototype.js" type="text/javascript"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.8.3/scriptaculous.js" type="text/javascript"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/prototype/1.6.1.0/prototype.js" type="text/javascript"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/scriptaculous/1.8.3/scriptaculous.js" type="text/javascript"></script>
 	<script src="../jwplayer/jwplayer.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
@@ -26,15 +26,15 @@
 			<h1><a href="../index.html">Big Somewhere</a></h1>
 		</div>
 		<div id="video">
-            <iframe src="http://player.vimeo.com/video/57426101?title=0&amp;byline=0&amp;portrait=0" width="800" height="450" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-			<!-- <iframe width="800" height="334" src="http://www.youtube.com/embed/H8OQu9ndynk?hd=1&amp;modestbranding=0&amp;autohide=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> -->
+            <iframe src="//player.vimeo.com/video/57426101?title=0&amp;byline=0&amp;portrait=0" width="800" height="450" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+			<!-- <iframe width="800" height="334" src="//www.youtube.com/embed/H8OQu9ndynk?hd=1&amp;modestbranding=0&amp;autohide=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> -->
 		</div>
 		<div id="content">
 			<div class="content-area">
 				<div id="player-quality-controls"></div>
 				<h3>Take a look at <em>Big Somewhere</em>.</h3>
 				<div class="message_area">
-					<p>If you have a second, please <a href="http://vimeo.com/wilgieseler/bigsomewhere">like the film or comment on Vimeo</a>.</p>
+					<p>If you have a second, please <a href="//vimeo.com/wilgieseler/bigsomewhere">like the film or comment on Vimeo</a>.</p>
 					<p><a href="../">For more information, please click here</a>.</p>
 				</div>
 			</div>
@@ -42,14 +42,14 @@
 		<div id="footer">
 			<span class="copyright">&copy;2011 <a href="http://wil.gieseler.org">Wil Gieseler</a></span>
 		</div>
-		
+
 	</div>
-	
+
     <!-- <script type="text/javascript">
-    
+
     var youtube_link    = "http://www.youtube.com/v/H8OQu9ndynk";
     var thumbnail_image = "../images/slideshow/bigsomewhere7.jpg";
-    
+
         jwplayer("media-player").setup({
             'file': youtube_link,
             'image': thumbnail_image,
@@ -64,13 +64,13 @@
                 { type: "html5" }
             ]
         });
-        
+
         document.observe("dom:loaded", function() {
-            
+
             var qc = $("player-quality-controls");
-            
+
             var options = [["1080p", "hd1080", ""], ["720p", "hd720", "selected"], ["SD", "large", ""]]
-            
+
             options.each(function(option){
                 var element = new Element('a', { 'class': 'quality-control ' + option[2], "id": "quality-control-" + option[1], 'href': '#' }).
                         update(option[0]).
@@ -81,7 +81,7 @@
                         });
                 qc.insert(element);
             });
-            
+
             // var hd = new Element('a', { 'class': 'quality-control selected', "id": "quality-control-hd", 'href': '#' }).
             //      update("HD").
             //      observe('click', function(event){
@@ -89,7 +89,7 @@
             //          select_quality_control_link($(event.target));
             //          event.stop();
             //      });
-            // 
+            //
             // var sd = new Element('a', { 'class': 'quality-control', "id": "quality-control-sd", 'href': '#' }).
             //      update("SD").
             //      observe('click', function(event){
@@ -97,28 +97,28 @@
             //          select_quality_control_link($(event.target));
             //          event.stop();
             //          });
-            // 
+            //
             // qc.insert(hd).insert(sd);
-            
+
         });
-        
+
         function select_quality_control_link(elem) {
             $$("a.quality-control").each(function(x){
                 x.removeClassName("selected");
             });
             elem.addClassName("selected");
         }
-        
+
         function display_video_with_youtube_quality(youtube_quality) {
             var pos = jwplayer().getPosition();
             jwplayer().load({'file': youtube_link, 'image': thumbnail_image, "provider": "youtube", "youtube.quality": youtube_quality});
             if (pos > 0)
                 jwplayer().seek(pos);
         }
-        
+
     </script> -->
-	
-	
+
+
 	<script type="text/javascript">
 
 	  var _gaq = _gaq || [];
